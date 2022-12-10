@@ -1,0 +1,19 @@
+// base styles
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+// utils
+@import './utils/variables';
+@import './utils/modal';
+
+// partials
+@import './partials/header';
+@import './partials/hero';
+@import './partials/benefits';
+@import './partials/work';
+@import './partials/team';
+@import './partials/clients';
+@import './partials/footer';
+@import './partials/portfolio';
+@import './partials/menu';

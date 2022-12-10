@@ -1,0 +1,126 @@
+.works {
+  padding: 94px 0;
+}
+
+.works-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.works-buttons {
+  color: var(--title-text-color);
+  background-color: var(--background-team-color);
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 6px 25px;
+  transition: color var(--trns), background-color var(--trns), box-shadow var(--trns);
+  &:hover,
+  &:focus {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.works__item {
+  width: 370px;
+}
+
+.works__link {
+  text-decoration: none;
+  display: block;
+  transition: box-shadow var(--trns);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.works__link:hover .overlay,
+.works__link:focus .overlay {
+  transform: translateY(0);
+}
+
+.works__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  backdrop-filter: blur(2px);
+  transition: transform var(--trns);
+}
+
+.overlay__txt {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  outline: 1px solid tomato;
+  padding-top: 63px;
+  padding-bottom: 63px;
+}
+
+.works__signature {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  &::not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.works__list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.works__list .text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
